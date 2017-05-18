@@ -35,7 +35,7 @@ class AXMLPrinter:
         self.buff = ""
 
         while 1:
-            _type = next(self.axml)
+            _type = self.axml.next()
             #print "tagtype = ", _type
 
             if _type == tc.START_DOCUMENT:
